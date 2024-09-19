@@ -1,0 +1,291 @@
+@import url('https://fonts.googleapis.com/css2?family=Poetsen+One&display=swap');
+*{
+    border: 0;
+    margin: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+body{
+    /* background-color: rgb(82, 81, 81); */
+    background-color: rgb(19, 19, 19);
+}
+
+nav{
+    display: flex;
+    flex-direction: row;
+    justify-content:space-evenly;
+    align-items: center;
+    margin: 2%;
+}
+
+.itens{
+    display: flex;
+    flex-direction: row;
+    gap: 50px;
+}
+
+.menu_item{
+    color: white;
+    font-family: "Poetsen One", sans-serif;
+    font-size: 18px;
+}
+
+.menu_item:hover{
+    color: rgb(168, 40, 40);
+}
+
+.section_home{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 10%;
+}
+
+.home_texto{
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+    align-items: center;
+}
+
+.titulo_home{
+    color: white;
+    font-family: "Poetsen One", sans-serif;
+    font-size: 32px;
+}
+
+.button{
+    display: inline-block;
+    color: white;
+    background-color: rgb(168, 40, 40);
+    padding: 0.75rem 2.5rem;
+    font-family: "Poetsen One", sans-serif;
+    border-radius: 0.5rem;
+}
+
+.button:hover{
+    box-shadow: 0px 0px 8px rgb(168, 40, 40);
+    transform: scale(1.05);
+}
+
+.home_icon{
+    font-size: 24px;
+    color: white;
+}
+
+.home_icon:hover{
+    color: rgb(168, 40, 40);
+}
+
+#texto_lucas{
+    color: rgb(168, 40, 40);
+}
+
+.section_sobre{
+    display: flex;
+    text-align: center;
+    flex-direction: column;
+    margin-top: 10%;
+    gap: 50px;
+}
+
+.titulo_sobre{
+    color: white;
+    font-family: "Poetsen One", sans-serif;
+    font-size: 27px;
+}
+
+.div_sobre{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    text-align: center;
+    margin-top: 3%;
+}
+
+.img{
+    border-radius: 10%;
+    box-shadow: 5px 0px 8px white;
+}
+
+.titulo_sobre_2{
+    color: white;
+    font-family: "Poetsen One", sans-serif;
+    font-size: 24px;
+    font-weight: 600;
+}
+
+.texto_sobre{
+    margin-top: 2%;
+    color: white;
+    font-family: "Poetsen One", sans-serif;
+    font-size: 18px;
+    font-weight: 200;
+    text-align: justify;
+}
+
+.section_habilidades{
+    display: flex;
+    text-align: center;
+    flex-direction: column;
+    margin-top: 10%;
+}
+
+.habilidades{
+    font-family: "Poetsen One", sans-serif;
+    list-style: none;
+    margin: 60px auto;
+    width: 500px;
+    color: white;
+    padding: 20px;
+    box-shadow: 0 14px 28px rgba(240, 240, 240, 0.25), 0 10px 10px rgba(240, 240, 240, 0.22);
+}
+
+.habilidades li{
+    margin: 20px 0;
+    padding: 10px;
+}
+
+.barra{
+    background: white;
+    display: block;
+    height: 20px;
+    border: 1px solid rgba(white);
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 1px 3px rgba(240, 240, 240, 0.25), 0 1px 2px rgba(240, 240, 240, 0.22);
+    transition: all 0.3s cubic-bezier(.25,.8,.25,1);
+}
+
+.barra:hover{
+    box-shadow: 0 14px 28px rgba(240, 240, 240, 0.25), 0 10px 10px rgba(240, 240, 240, 0.22);
+}
+
+.barra span{
+    height: 20px;
+    float: left;
+    background: linear-gradient(135deg, rgba(236,0,140, 1)0%, rgb(168, 40, 40)100%);
+}
+
+.HTML{
+    width: 90%;
+    animation: HTML 3s;
+}
+
+.CSS{
+    width: 80%;
+    animation: CSS 3s;
+}
+
+.Python{
+    width: 70%;
+    animation: Python 3s;
+}
+
+.MySQL{
+    width: 50%;
+    animation: MySQL 3s;
+}
+
+.C{
+    width: 40%;
+    animation: C 3s;
+}
+
+@keyframes HTML{
+    0%{
+        width: 0%;
+    }
+    100%{
+        width: 90%;
+    }
+}
+
+@keyframes CSS{
+    0%{
+        width: 0%;
+    }
+    100%{
+        width: 80%;
+    }
+}
+
+@keyframes Python{
+    0%{
+        width: 0%;
+    }
+    100%{
+        width: 70%;
+    }
+}
+
+@keyframes MySQL{
+    0%{
+        width: 0%;
+    }
+    100%{
+        width: 50%;
+    }
+}
+
+@keyframes C{
+    0%{
+        width: 0%;
+    }
+    100%{
+        width: 40%;
+    }
+}
+
+.section_contato{
+    display: flex;
+    text-align: center;
+    flex-direction: column;
+    margin-top: 5%;
+}
+
+.titulo_contato{
+    color: white;
+    font-family: "Poetsen One", sans-serif;
+    font-size: 27px;
+}
+
+.contato_form {
+    width: 360px;
+    padding-top: 2rem;
+}
+
+.contato_div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.contato_input {
+    font-family: "Poetsen One", sans-serif;
+    width: 100%;
+    margin-top: 5%;
+    padding: 10px;
+    border-radius: 0.5rem;
+    border: 1.5px solid red;
+    outline: none;
+}
+
+.contato_button {
+    font-size: 16px;
+    margin-top: 1%;
+    cursor: pointer;
+    color: white;
+    background-color: rgb(168, 40, 40);
+    padding: 0.35rem 2.5rem;
+    font-family: "Poetsen One", sans-serif;
+    border-radius: 0.5rem;
+}
+
+.contato_button:hover{
+    box-shadow: 0px 0px 8px rgb(168, 40, 40);
+    transform: scale(1.05);
+}
